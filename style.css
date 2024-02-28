@@ -232,6 +232,7 @@ form > input {
 }
 form > textarea {
   border: none;
+  width: 256.5px;
   border: 1px solid #c4c4c4;
   outline: none;
   font-size: 16px;
