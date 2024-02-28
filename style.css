@@ -58,6 +58,7 @@ header {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  gap: 60px;
 }
 main {
   margin-bottom: 200px;
