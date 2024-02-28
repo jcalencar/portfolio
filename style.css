@@ -413,4 +413,7 @@ html{
     text-transform: uppercase;
     color: var(--tetiary-color);
   }
+  .services {
+    width: 100%;
+  }
 }
