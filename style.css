@@ -46,8 +46,7 @@ header {
 .nav {
   width: 100%;
   display: flex;
-  align-items: center;
-   margin-left: 100px;
+  justify-content: center;
    gap: 150px;
 }
 .nav > .logo {
@@ -59,7 +58,6 @@ header {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  gap: 20px;
 }
 main {
   margin-bottom: 200px;
