@@ -14,11 +14,12 @@
     <!-- header start -->
     <header class="header">
       <nav class="nav">
+        <!--<div class="logo">João Alencar</div>-->
         <div class="el">
           <ul class="list">
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
+            <a href="#contatos">Contact</a>
           </ul>
         </div>
       </nav>
@@ -75,41 +76,58 @@
 
         <div class="skillcard">
           <div class="card">
-            <div class="per">70%</div>
+            <div class="per">90%</div>
             <div class="name">Html</div>
           </div>
           <div class="card">
-            <div class="per">60%</div>
+            <div class="per">85%</div>
             <div class="name">Css</div>
           </div>
           <div class="card">
-            <div class="per">20%</div>
+            <div class="per">60%</div>
             <div class="name">javascript</div>
           </div>
           <div class="card">
-            <div class="per">70%</div>
+            <div class="per">75%</div>
             <div class="name">Python</div>
           </div>
         </div>
       </section>
+
+
+
       <!-- Contact Form -->
-      <div class="forms" id="contact">
-        <h2 class="title">Contact</h2>
-        <form action="#">
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Last name" />
-          <input type="text" placeholder="Email" />
-          <input type="text" placeholder="Phone number" />
-          <textarea
-            name=""
-            id=""
-            placeholder="message"
-            cols="300"
-            rows="8"
-          ></textarea>
-          <a href="#" class="cv">Submit now</a>
-        </form>
+      <div class="contatos" id="contatos">
+<div class="contactForm">
+    <form action="https://script.google.com/macros/s/AKfycbyxOSxNkTFDcvxMvC2z6A98gusidOKee7L7udA37UrmqhENvbBHrWFayVQEchw7GIqV/exec" method="post" name="contactForm">
+        <h2>Contact</h2>
+        <div class="inputBox">
+            <input type="text" name="nome" required="required">
+            <span>Name</span>
+        </div>
+        <div class="inputBox">
+            <input type="tel" name="telefone" required="required">
+            <span>Phone</span>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="email" required="required">
+            <span>Email</span>
+        </div>
+        <div class="inputBox">
+            <textarea name="mensagem" required="required"></textarea>
+            <span>Mensage</span>
+        </div>
+        <div class="inputBox">
+            <button type="submit" name="" value="Send">
+                Send
+            </button>
+        </div>
+    
       </div>
+      </div>
+    </form>
+
+
       <div class="socails">
         <div class="card">
           <div class="circ">
@@ -142,10 +160,8 @@
       </div>
     </section>
     </main>
-
-    <a href="#" id="back-to-top-btn">Back to top</a>
-
-<script src="index.js"></script>
+      <a href="#" id="back-to-top-btn">Back to top</a>
+    <script src="index.js"></script> 
     <footer class="footer">
       &copy;
       <p>João Alencar</p>
