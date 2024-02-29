@@ -14,3 +14,28 @@ document.getElementById('back-to-top-btn').addEventListener('click', function(e)
         behavior: 'smooth'
     });
 });
+const button = document.querySelector('button');
+
+const addLoading = () => {
+    button.innerHTML = '<img src="images/loading.png" class="loading">';
+}
+
+const removeLoading = () => {
+    button.innerHTML = 'Send';
+}
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyxOSxNkTFDcvxMvC2z6A98gusidOKee7L7udA37UrmqhENvbBHrWFayVQEchw7GIqV/exec';
+
+const form = document.forms['contactForm'];
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    addLoading();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        removeLoading();
+        window.location.reload();
+        
+    })
+    .catch(error => console.error('Error!', error.message));
+});
