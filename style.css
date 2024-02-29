@@ -217,7 +217,6 @@ form {
   width: 100%;
   align-self: center;
   margin-top: 50px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -457,7 +456,7 @@ html{
   margin: 10px 0;
   pointer-events: none;
   transition: 0.5s;
-  color: #ffffff;
+  color: #000000;
 }
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
@@ -492,10 +491,10 @@ html{
   align-items: center;
 }
 .contactForm .inputBox input {
-  background-color: #171717;
+  background-color: #ffffff;
 }
 textarea {
-background-color: #171717;
+background-color: #ffffff;
 }
 @media (max-width: 991px) {
   .contacts {
